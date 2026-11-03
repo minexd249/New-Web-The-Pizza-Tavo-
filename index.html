@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bienvenido a nuestra pizzería. Mira nuestras promociones y carta.">
+  <title>🍕 Mi Pizzería</title>
+  <style>
+    body{font-family:Arial,sans-serif;background:#fff8ef;color:#29201b;text-align:center;padding:40px 20px}
+    .card{max-width:520px;margin:auto;background:white;padding:28px;border-radius:20px;box-shadow:0 8px 28px #0001}
+    h1{color:#c62828} .loader{margin:22px auto;width:38px;height:38px;border:5px solid #f1d8c5;border-top-color:#c62828;border-radius:50%;animation:spin 1s linear infinite}
+    @keyframes spin{to{transform:rotate(360deg)}} a{color:#c62828}
+  </style>
+</head>
+<body>
+  <main class="card">
+    <h1>🍕 ¡Bienvenido a nuestra pizzería!</h1>
+    <p>Estamos preparando el menú para tu dispositivo…</p>
+    <div class="loader" aria-label="Cargando"></div>
+    <noscript>Activa JavaScript para continuar. <a href="movil.html">Menú móvil</a> · <a href="pc.html">Menú computadora</a></noscript>
+  </main>
+  <script>
+    // Detecta celulares/tablets comunes y redirige a la página adecuada.
+    const esMovil = /Android|iPhone|iPod|Mobile|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    const destino = esMovil ? "movil.html" : "pc.html";
+    window.location.replace(destino);
+  </script>
+</body>
+</html>

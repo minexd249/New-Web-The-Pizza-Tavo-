@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🍕 Mi Pizzería | Menú para computadora</title>
+  <style>
+    *{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;background:#fff8ef;color:#2b211b}
+    header{background:#b82025;color:white;padding:28px 6%;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+    header h1{margin:0}header a{background:#fff;color:#b82025;padding:12px 18px;border-radius:25px;text-decoration:none;font-weight:bold}
+    .hero{text-align:center;padding:55px 20px;background:linear-gradient(120deg,#ffe2b8,#fff8ef)}
+    .hero h2{font-size:42px;margin:0 0 12px;color:#a51e22}.hero p{font-size:20px}
+    .wrap{max-width:1100px;margin:auto;padding:30px 22px}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+    .pizza{background:white;border-radius:18px;overflow:hidden;box-shadow:0 5px 20px #0001}.pizza .photo{height:170px;background:#f5d4b5;display:grid;place-items:center;font-size:72px}
+    .pizza div:last-child{padding:18px}.pizza h3{margin:0 0 8px}.price{font-size:22px;color:#b82025;font-weight:bold}
+    .cta{display:inline-block;background:#168342;color:white;text-decoration:none;font-weight:bold;padding:15px 24px;border-radius:30px;margin-top:20px}
+    footer{text-align:center;padding:25px;background:#2b211b;color:white}
+    @media(max-width:800px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.hero h2{font-size:32px}}
+    @media(max-width:520px){.grid{grid-template-columns:1fr}header{justify-content:center;text-align:center}}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🍕 Mi Pizzería</h1>
+    <a href="https://wa.me/51927431644?text=Hola%2C%20quisiera%20hacer%20un%20pedido" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+  </header>
+  <section class="hero">
+    <h2>¡Una pizza, mil sonrisas!</h2>
+    <p>Descubre nuestras pizzas y promociones especiales.</p>
+    <strong>🎉 ¡Próximamente anunciaremos nuestras ofertas!</strong>
+  </section>
+  <main class="wrap">
+    <h2>🍽️ Nuestra carta</h2>
+    <p>Reemplaza los nombres, ingredientes y precios de ejemplo por los de tu negocio.</p>
+    <section class="grid">
+      <article class="pizza"><div class="photo">🍕</div><div><h3>Pizza Americana</h3><p>Jamón, queso y salsa de tomate.</p><span class="price">S/ --</span></div></article>
+      <article class="pizza"><div class="photo">🍕</div><div><h3>Pizza Hawaiana</h3><p>Jamón, piña y queso mozzarella.</p><span class="price">S/ --</span></div></article>
+      <article class="pizza"><div class="photo">🍕</div><div><h3>Pizza Pepperoni</h3><p>Pepperoni, queso y salsa especial.</p><span class="price">S/ --</span></div></article>
+    </section>
+    <div style="text-align:center;margin:35px 0">
+      <h2>¿Listo para pedir?</h2>
+      <a class="cta" href="https://wa.me/51927431644?text=Hola%2C%20quisiera%20hacer%20un%20pedido" target="_blank" rel="noopener">💬 Pedir por WhatsApp</a>
+    </div>
+  </main>
+  <footer>© Mi Pizzería · ¡Gracias por visitarnos!</footer>
+</body>
+</html>
