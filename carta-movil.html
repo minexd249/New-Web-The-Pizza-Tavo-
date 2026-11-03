@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pizza Taro | Carta para celular</title>
+<style>
+:root{--green:#58b83f;--red:#c92332;--black:#111;--cream:#fff8ef}
+*{box-sizing:border-box}
+body{margin:0;background:var(--black);color:#fff;font-family:Arial,Helvetica,sans-serif}
+header{text-align:center;padding:20px 12px 14px}
+.logo{display:inline-block;border:5px solid var(--green);border-radius:50%;padding:20px 24px;color:var(--red);background:#fff;font-size:clamp(26px,5vw,48px);font-weight:900;font-style:italic}
+.logo small{display:block;font-size:.45em;color:#333}
+header p{color:#ddd;margin:12px auto;max-width:650px}
+.hero{max-width:1100px;margin:auto;padding:0 18px}
+.hero img{width:100%;height:auto;display:block;border-radius:14px;border:1px solid #333}
+main{max-width:680px;margin:0 auto;padding:20px 12px}
+h2{color:var(--green);font-size:clamp(25px,4vw,36px);text-transform:uppercase;border-bottom:2px solid var(--green);padding-bottom:8px}
+.notice{color:#ddd;font-size:.95rem}
+table{width:100%;border-collapse:collapse;margin:14px 0 28px;min-width:500px}
+.table-wrap{overflow-x:auto}
+th,td{padding:12px 10px;text-align:center;border-bottom:1px solid #333}
+th{color:var(--green);font-size:1rem}
+td:first-child,th:first-child{text-align:left}
+.pizzas{display:grid;grid-template-columns:1fr;gap:12px}
+.card{border:1px solid #333;background:#191919;border-radius:12px;padding:16px}
+.card h3{color:#fff;margin:0 0 7px;font-size:1.1rem}
+.card p{color:#d5d5d5;margin:0;line-height:1.45}
+.tag{color:var(--green);font-weight:bold}
+.combo{text-align:center;color:var(--green);font-size:clamp(24px,5vw,44px);font-weight:900;text-transform:uppercase;margin:35px 0}
+.cta{display:block;max-width:450px;margin:25px auto;background:#18853d;color:white;text-decoration:none;text-align:center;font-weight:bold;padding:16px;border-radius:30px}
+footer{text-align:center;color:#aaa;padding:22px;border-top:1px solid #333}
+@media(max-width:600px){.pizzas{grid-template-columns:1fr}.logo{padding:14px 20px}main{padding:22px 12px}table{font-size:.9rem}th,td{padding:9px 7px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo"><small>Pizza</small>Taro</div>
+  <p>¡Elige tus sabores favoritos! Puedes combinar tus pizzas como quieras.</p>
+</header>
+<section class="hero">
+  <img src="pizzas-collage.png" alt="Galería ilustrativa de diferentes sabores de pizza: pepperoni, americana, fugazza, napolitana, chorizo, champiñones y especiales">
+</section>
+<main>
+  <section>
+    <h2>Clásicas</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Sabor</th><th>Personal</th><th>Mediana</th><th>Grande</th><th>Familiar</th></tr></thead>
+        <tbody>
+          <tr><td><b>Pepperoni</b><br><small>Mozzarella + pepperoni</small></td><td>S/ 12.00</td><td>S/ 30.00</td><td>S/ 35.00</td><td>S/ 45.00</td></tr>
+        <tr><td><b>Americana</b><br><small>Mozzarella + jamón</small></td><td>S/ 12.00</td><td>S/ 30.00</td><td>S/ 35.00</td><td>S/ 45.00</td></tr>
+        <tr><td><b>Fugazza</b><br><small>Mozzarella + cebolla + aceitunas</small></td><td>S/ 12.00</td><td>S/ 30.00</td><td>S/ 35.00</td><td>S/ 45.00</td></tr>
+        <tr><td><b>Napolitana</b><br><small>Mozzarella + rodajas de tomate + aceitunas + albahaca</small></td><td>S/ 12.00</td><td>S/ 30.00</td><td>S/ 35.00</td><td>S/ 45.00</td></tr>
+        <tr><td><b>Chorizo</b><br><small>Mozzarella + chorizo</small></td><td>S/ 12.00</td><td>S/ 30.00</td><td>S/ 35.00</td><td>S/ 45.00</td></tr>
+        <tr><td><b>Champiñones</b><br><small>Mozzarella + champiñones</small></td><td>S/ 12.00</td><td>S/ 30.00</td><td>S/ 35.00</td><td>S/ 45.00</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  <div class="combo">¡Combínalas<br>como quieras!</div>
+  <section>
+    <h2>Especiales</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Sabor</th><th>Personal</th><th>Mediana</th><th>Grande</th><th>Familiar</th></tr></thead>
+        <tbody>
+          <tr><td><b>Hawaiana</b><br><small>Mozzarella + piña + jamón</small></td><td>S/ 13.50</td><td>S/ 35.00</td><td>S/ 42.00</td><td>S/ 50.00</td></tr>
+          <tr><td><b>Tropical</b><br><small>Mozzarella + piña + durazno + jamón</small></td><td>S/ 15.00</td><td>S/ 38.00</td><td>S/ 45.00</td><td>S/ 52.00</td></tr>
+          <tr><td><b>Húngara</b><br><small>Mozzarella + champiñones + pollo</small></td><td>S/ 16.00</td><td>S/ 40.00</td><td>S/ 45.00</td><td>S/ 55.00</td></tr>
+          <tr><td><b>Full Embutidos</b><br><small>Mozzarella + jamón + chorizo + pepperoni + tocino</small></td><td>S/ 16.00</td><td>S/ 40.00</td><td>S/ 45.00</td><td>S/ 55.00</td></tr>
+          <tr><td><b>Carnívora</b><br><small>Mozzarella + carne + tocino + pepperoni + salame</small></td><td>S/ 16.00</td><td>S/ 40.00</td><td>S/ 45.00</td><td>S/ 55.00</td></tr>
+          <tr><td><b>Primavera</b><br><small>Mozzarella + jamón + huevo + aceitunas</small></td><td>S/ 16.00</td><td>S/ 40.00</td><td>S/ 45.00</td><td>S/ 55.00</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  <a class="cta" href="https://wa.me/51927431644?text=Hola%20Pizza%20Taro%2C%20quisiera%20hacer%20un%20pedido" target="_blank" rel="noopener">🍕 ¡Pide por WhatsApp!</a>
+  <p class="notice">Todas las pizzas clásicas (de Pepperoni a Champiñones) comparten los mismos precios.</p>
+</main>
+<footer>Pizza Taro · Carta digital</footer>
+</body>
+</html>
